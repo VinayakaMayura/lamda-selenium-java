@@ -8,7 +8,6 @@ import java.util.Properties;
 public class PropertyReader {
 
     Properties properties = new Properties();
-    InputStream inputStream = null;
 
     public PropertyReader() {
         loadProperties();
@@ -16,8 +15,7 @@ public class PropertyReader {
 
     private void loadProperties() {
         try {
-            inputStream = new FileInputStream("src/config.properties");
-            properties.load(inputStream);
+            properties.load(getClass().getResourceAsStream("/config.properties"));
         } catch (IOException e) {
             e.printStackTrace();
         }

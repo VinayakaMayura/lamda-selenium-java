@@ -18,16 +18,34 @@ repositories {
 
 apply plugin: 'com.github.johnrengelman.shadow'
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'junit', name: 'junit', version: '4.11'
     compile group: 'com.amazonaws', name: 'aws-lambda-java-core', version: '1.1.0'
-    testCompile(group: 'org.testng', name: 'testng', version: '6.8.8')
     compile(group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.53.0')
     compile(group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '2.53.0')
     compile "com.amazonaws:aws-lambda-java-core:1.1.0"
     compile "com.amazonaws:aws-lambda-java-events:1.3.0"
     compile "com.amazonaws:aws-lambda-java-log4j:1.0.0"
+//    compile "org.json:json:20180813"
 }
 
 shadowJar {
-    baseName='lamda-selenium-java'
+    from sourceSets.test.output
+    configurations = [project.configurations.testRuntime]
+}
+task unzipLibs(type: Copy) {
+    def libs = file('../bin/lib.zip')
+    def resources = file("${projectDir}/src/main/resources/")
+
+    from zipTree(libs)
+    into resources
+}
+
+task zipLibs(type: Zip) {
+    from processResources
+    archiveName 'lib.zip'
+    destinationDir(file('../bin/'))
+}
+
+task deploy(type: Exec) {
+    commandLine 'sls', 'deploy'
 }
