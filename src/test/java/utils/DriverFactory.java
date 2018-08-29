@@ -21,8 +21,8 @@ public class DriverFactory {
         System.out.println("LAMBDA_TASK_ROOT : " + System.getenv("LAMBDA_TASK_ROOT"));
         if (driver == null) {
             String logname = System.getenv("LOGNAME");
-          //if (logname != null && !logname.equals("varunas"))
-               System.setProperty("webdriver.chrome.driver", getClass().getResource("/lib/chromedriver").getPath());
+            //if (logname != null && !logname.equals("varunas"))
+            System.setProperty("webdriver.chrome.driver", getClass().getResource("/lib/chromedriver").getPath());
 //               System.setProperty("webdriver.chrome.driver", getLibLocation("chromedriver"));
             createNewDriverInstance();
         }
@@ -32,7 +32,6 @@ public class DriverFactory {
         String browser = new PropertyReader().readProperty("browser");
         if (browser.equals("chrome")) {
             driver = createLambdaChromeDriver();
-            System.out.println("Varuna"+driver);
         } else if (browser.equals("firefox")) {
             driver = new FirefoxDriver();
         } else
@@ -47,22 +46,20 @@ public class DriverFactory {
         driver.quit();
         driver = null;
     }
+
     private String getLibLocation(String lib) {
         return String.format("%s/lib/%s", System.getenv("LAMBDA_TASK_ROOT"), lib);
     }
+
     public ChromeDriver createLambdaChromeDriver() {
-       // System.setProperty("webdriver.chrome.driver","C:/your_directory/chromedriver.exe");
-        //System.setProperty("webdriver.chrome.driver", getClass().getResource("/lib/chromedriver").getPath());
 
         ChromeOptions options = new ChromeOptions();
 
         // Set the location of the chrome binary from the resources folder
         String logname = System.getenv("LOGNAME");
         //if (logname != null && !logname.equals("varunas"))
-            options.setBinary(getClass().getResource("/lib/chrome").getPath());
+        options.setBinary(getClass().getResource("/lib/chrome").getPath());
 //        options.setBinary(getLibLocation("chrome"));
-
-        // Include these settings to allow Chrome to run in Lambda
         options.addArguments("--disable-gpu");
         options.addArguments("--headless");
         options.addArguments("--window-size=1366,768");
@@ -72,12 +69,10 @@ public class DriverFactory {
         options.addArguments("--data-path=/tmp/data-path");
         options.addArguments("--homedir=/tmp");
         options.addArguments("--disk-cache-dir=/tmp/cache-dir");
-
         DesiredCapabilities desiredCapabilities = DesiredCapabilities.chrome();
         desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, options);
 
         ChromeDriver chromeDriver = new ChromeDriver(desiredCapabilities);
-        System.out.print("CDRRR::::::::"+chromeDriver);
         return chromeDriver;
     }
 }
