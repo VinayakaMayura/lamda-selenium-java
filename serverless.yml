@@ -1,0 +1,20 @@
+# serverless.yml
+service: lambda-selenium-vodQA
+
+package:
+  artifact: build/libs/lamda-selenium-java-1.0-SNAPSHOT-all.jar
+
+provider:
+  name: aws
+  stage: ${opt:stage, 'qa'}
+  runtime: java8
+  memorySize: 3008
+  timeout: 300
+  versionFunctions: false
+  region: us-east-2
+
+functions:
+  'lambda-selenium-vodQAdemo':
+    handler: 'lamda.MyFirstLamda::handleRequest'
+    name: lambda-selenium-demo
+    description: Lambda Selenium vodQADemo Tests

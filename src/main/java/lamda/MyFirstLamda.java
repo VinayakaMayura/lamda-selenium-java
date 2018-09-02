@@ -2,25 +2,35 @@ package lamda;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
-import com.amazonaws.services.lambda.runtime.events.S3Event;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runners.BlockJUnit4ClassRunner;
-import org.junit.runners.model.InitializationError;
+import java.util.Optional;
+import static java.util.Optional.ofNullable;
 
-public class MyFirstLamda implements RequestHandler<S3Event, Result> {
+public class MyFirstLamda implements RequestHandler<TestRequest, TestResult> {
+    private static TestResult testResult;
+
+    public MyFirstLamda() {
+        testResult = new TestResult();
+    }
+
     @Override
-    public Result handleRequest(S3Event input, Context context) {
-        System.out.println("OS NAME ::::::::"  + System.getProperty("os.name"));
-        BlockJUnit4ClassRunner runner = null;
+    public TestResult handleRequest(TestRequest testRequest, Context context) {
+        System.out.print("Inside handleRequest" + testRequest);
+        Optional<Result> result = Optional.empty();
         try {
-            runner = new BlockJUnit4ClassRunner(Class.forName("tests.StartTests"));
-        } catch (InitializationError initializationError) {
-            initializationError.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+            BlockJUnit4ClassRunner runner = new BlockJUnit4ClassRunner(Class.forName(testRequest.getTestClass()));
+            runner.filter(new TestFilter(testRequest.getFrameworkMethod()));
+            result = ofNullable(new JUnitCore().run(runner));
+        } catch (Exception e) {
+            System.out.print(e);
         }
-
-        return new JUnitCore().run(runner);
+        if (result.isPresent()) {
+            testResult.setRunCount(result.get().getRunCount());
+            testResult.setFailureCount(result.get().getFailureCount());
+            testResult.setRunTime(result.get().getRunTime());
+        }
+        return testResult;
     }
 }
