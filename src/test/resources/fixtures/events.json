@@ -1,14 +1,435 @@
 [
   {
+  "testClass": "tests.StartTests",
+  "frameworkMethod": "verifyUrl"
+},
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl1"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl2"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin1"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin2"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin3"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin4"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin5"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl3"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl4"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl5"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl6"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl7"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl8"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl9"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl10"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl11"
+  },
+  {
     "testClass": "tests.StartTests",
     "frameworkMethod": "verifyUrl"
   },
   {
     "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl1"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl2"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin1"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin2"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin3"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin4"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin5"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl3"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl4"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl5"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl6"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl7"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl8"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl9"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl10"
+  },
+  {
+    "testClass": "tests.StartTests",
     "frameworkMethod": "verifyUrl11"
   },
   {
-    "testClass": "tests.StartTests11",
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl1"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl2"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin1"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin2"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin3"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin4"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin5"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl3"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl4"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl5"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl6"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl7"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl8"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl9"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl10"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl11"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl1"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl2"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin1"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin2"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin3"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin4"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin5"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl3"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl4"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl5"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl6"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl7"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl8"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl9"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl10"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl11"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl1"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl2"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin1"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin2"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin3"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin4"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin5"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl3"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl4"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl5"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl6"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl7"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl8"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl9"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl10"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl11"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl1"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl2"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin1"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin2"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin3"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin4"
+  },
+  {
+    "testClass": "tests.LoginTests",
+    "frameworkMethod": "verifyLogin5"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl3"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl4"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl5"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl6"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl7"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl8"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl9"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl10"
+  },
+  {
+    "testClass": "tests.StartTests",
     "frameworkMethod": "verifyUrl11"
   }
+
 ]

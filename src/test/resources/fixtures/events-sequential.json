@@ -1,0 +1,42 @@
+[
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl11"
+  },
+  {
+    "testClass": "tests.StartTests11",
+    "frameworkMethod": "verifyUrl11"
+  },
+  {
+    "testClass": "tests.StartTests11",
+    "frameworkMethod": "verifyUrl11"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl11"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl11"
+  },
+  {
+    "testClass": "tests.StartTests11",
+    "frameworkMethod": "verifyUrl11"
+  },
+  {
+    "testClass": "tests.StartTests11",
+    "frameworkMethod": "verifyUrl11"
+  },
+  {
+    "testClass": "tests.StartTests",
+    "frameworkMethod": "verifyUrl11"
+  }
+]
